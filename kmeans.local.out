@@ -1,0 +1,205 @@
+2018-10-04 10:24:09,364 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-10-04 10:24:09,629 INFO  [main] Configuration.deprecation (Configuration.java:warnOnceIfDeprecated(1049)) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-04 10:24:09,630 INFO  [main] jvm.JvmMetrics (JvmMetrics.java:init(76)) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-04 10:24:09,984 WARN  [main] mapreduce.JobSubmitter (JobSubmitter.java:copyAndConfigureFiles(153)) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-04 10:24:10,021 INFO  [main] input.FileInputFormat (FileInputFormat.java:listStatus(281)) - Total input paths to process : 1
+2018-10-04 10:24:10,052 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:submitJobInternal(494)) - number of splits:1
+2018-10-04 10:24:10,201 INFO  [main] mapreduce.JobSubmitter (JobSubmitter.java:printTokens(583)) - Submitting tokens for job: job_local2052748297_0001
+2018-10-04 10:24:10,635 INFO  [main] mapred.LocalDistributedCacheManager (LocalDistributedCacheManager.java:setup(171)) - Localized file:/home/pkj6783/project2/centroids.txt as file:/tmp/hadoop-pkj6783/mapred/local/1538673850452/centroids.txt
+2018-10-04 10:24:10,824 INFO  [main] mapreduce.Job (Job.java:submit(1300)) - The url to track the job: http://localhost:8080/
+2018-10-04 10:24:10,830 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1345)) - Running job: job_local2052748297_0001
+2018-10-04 10:24:10,832 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:createOutputCommitter(471)) - OutputCommitter set in config null
+2018-10-04 10:24:10,844 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:createOutputCommitter(489)) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-10-04 10:24:11,002 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(448)) - Waiting for map tasks
+2018-10-04 10:24:11,003 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:run(224)) - Starting task: attempt_local2052748297_0001_m_000000_0
+2018-10-04 10:24:11,079 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:initialize(587)) -  Using ResourceCalculatorProcessTree : [ ]
+2018-10-04 10:24:11,081 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:runNewMapper(753)) - Processing split: file:/home/pkj6783/project2/points-small.txt:0+36948
+2018-10-04 10:24:11,233 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:setEquator(1202)) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-04 10:24:11,233 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(995)) - mapreduce.task.io.sort.mb: 100
+2018-10-04 10:24:11,233 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(996)) - soft limit at 83886080
+2018-10-04 10:24:11,233 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(997)) - bufstart = 0; bufvoid = 104857600
+2018-10-04 10:24:11,234 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:init(998)) - kvstart = 26214396; length = 6553600
+2018-10-04 10:24:11,237 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:createSortingCollector(402)) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+7.2 11.2103.8595159143874 161.88201079271323 14
+15.2 9.2123.87740513308016 75.76850246209037 8
+5.2 17.245.605630153840885 140.473457877753 8
+15.2 7.2155.37119143192828 75.73048307342447 10
+19.2 3.2310.45081770946877 57.091212374310864 16
+17.2 3.2156.3844895087542 30.306225911629546 9
+7.2 13.297.41682696437262 176.02007325804001 13
+19.2 13.2135.969198184361 94.46756433065532 7
+13.2 9.295.52116395040217 66.85208852771366 7
+17.2 17.2157.04674247213538 158.13893305404213 9
+19.2 9.2312.2117573578548 152.44437533532826 16
+17.2 19.2121.91689404266002 135.86954848553978 7
+17.2 13.2173.44366106689733 135.04042794103776 10
+5.2 5.271.97727748254648 72.85328597158963 13
+11.2 19.2127.44437432981209 215.13237022369012 11
+7.2 19.244.830627203972504 117.06473683615965 6
+7.2 9.274.73465707728508 95.27236625702002 10
+3.2 9.236.14243664359365 95.3358786419872 10
+9.2 17.2114.73323375108063 209.01634254234028 12
+19.2 7.2272.5171908861242 104.84055048042866 14
+5.2 15.254.663515735112085 153.8040370196049 10
+1.2 15.217.52616427749011 186.6143019437147 12
+9.2 5.276.54328993047028 43.996537088361755 8
+3.2 19.235.35421927003258 194.33644293195005 10
+1.2 7.219.80309736249366 104.47124045650415 14
+19.2 15.2292.71633644466436 232.0546716434504 15
+5.2 13.237.403662407849566 93.36534383163823 7
+19.2 1.2194.66892901603225 15.583760512167482 10
+5.2 11.239.03000394195095 80.34464136912969 7
+1.2 19.220.614187752712724 253.22937396590854 13
+9.2 19.257.25001378748313 116.94456204330237 6
+5.2 9.231.407622460556375 57.76413529147741 6
+17.2 7.2192.75709716568065 83.65846998419919 11
+13.2 11.2133.37475973934067 116.53972321069816 10
+9.2 3.2113.09726265500505 41.41209095946195 12
+3.2 3.213.172823964021525 14.41100562223825 4
+13.2 1.2133.7891660582484 16.07969679895025 10
+15.2 19.2154.49834657248928 194.80881048897137 10
+1.2 13.214.214268238265083 136.5385991534782 10
+11.2 3.293.31422190158088 28.76726076369635 8
+15.2 3.2140.6602023819958 31.37512683123334 9
+9.2 7.267.25035295900298 52.49832471762635 7
+1.2 17.210.00883588208115 104.07077115240358 6
+1.2 3.213.795584775148804 30.91509989526198 9
+7.2 5.275.51997407764198 55.163853208905856 10
+19.2 5.2252.79376082797944 70.21107405262482 13
+15.2 5.2186.64637210830185 63.995398014865366 12
+5.2 1.250.438405171324426 12.310398278071515 9
+3.2 17.224.55899267287047 123.01421388059906 7
+11.2 15.2115.65789152839638 154.92263851257923 10
+1.2 9.216.877851090117787 103.70384065905981 11
+15.2 13.2139.18051975579942 121.6888613201144 9
+9.2 1.2113.21428036086246 19.15130974724775 12
+7.2 3.274.04644349482736 33.238275829253645 10
+3.2 13.228.490284701084605 107.64358032235033 8
+11.2 1.281.79255304264221 10.119213106266507 7
+15.2 1.2155.39260032097573 16.402899134308285 10
+5.2 3.269.0322904042255 46.613954918195034 13
+13.2 13.294.642843222487 95.11838586407282 7
+15.2 17.2200.74467741169465 225.93717125294535 13
+9.2 9.294.3533909421272 95.62784018615889 10
+19.2 17.2213.5419069436393 191.9920981280075 11
+7.2 15.214.834299823039006 30.843667196415126 2
+17.2 11.2226.12936018309213 149.82487709240243 13
+17.2 9.2176.1150223845672 93.91536353654085 10
+11.2 17.246.06913814421973 69.84340134761027 4
+7.2 1.297.68258811586227 18.754554756181157 13
+11.2 11.2102.74151910944602 100.81842421848098 9
+1.2 5.212.936062765251581 43.25008876536451 8
+17.2 15.2298.7405676513491 263.6215241067928 17
+15.2 11.2124.45991155669348 90.90639908532552 8
+11.2 5.2171.84374622432057 80.99882718571857 15
+13.2 19.2213.98752042590476 311.465621275393 16
+15.2 15.2138.76665156085028 139.26496945854635 9
+5.2 19.238.458051673817764 135.7670120271767 7
+1.2 1.210.971040324598363 11.070736067586182 8
+9.2 15.2123.83877931411433 201.7301184266304 13
+3.2 11.229.175780191899243 92.11151330677902 8
+13.2 15.2134.7999696751019 155.1841662778891 10
+3.2 5.234.255552029818 55.527595493405045 10
+19.2 19.2155.27387706382848 156.98678020200475 8
+1.2 11.216.93184351451883 138.34345872534232 12
+7.2 7.282.4628568067553 82.45858676083438 11
+11.2 9.279.20228643257201 66.72788841258065 7
+13.2 3.268.28996855188973 17.43674630709049 5
+11.2 13.2104.51032034639496 120.88509343954402 9
+3.2 15.220.526915638294266 94.23445222885294 6
+19.2 11.2253.01162171461323 149.84571849368794 13
+17.2 5.2262.44300890836377 81.2019879589389 15
+9.2 11.2114.15131704764748 138.19793308592554 12
+11.2 7.2160.5948670800582 105.47190805368541 14
+13.2 7.2202.81534899014858 112.7356393664534 15
+9.2 13.295.59452530427794 135.42181968156078 10
+5.2 7.253.86919778686883 75.79927155353852 10
+3.2 7.244.69053129691531 91.62537213407454 12
+3.2 1.238.82492138584883 16.064250405288746 11
+13.2 17.2120.76804287664879 156.19987267112967 9
+7.2 17.230.36898073779321 70.24001900017129 4
+17.2 1.2243.87460697132397 20.669416269492142 14
+13.2 5.294.3077895688158 39.12205516869492 7
+2018-10-04 10:24:11,429 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - 
+2018-10-04 10:24:11,441 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1457)) - Starting flush of map output
+2018-10-04 10:24:11,441 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1475)) - Spilling map output
+2018-10-04 10:24:11,441 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1476)) - bufstart = 0; bufend = 4000; bufvoid = 104857600
+2018-10-04 10:24:11,441 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:flush(1478)) - kvstart = 26214396(104857584); kvend = 26214000(104856000); length = 397/6553600
+2018-10-04 10:24:11,463 INFO  [LocalJobRunner Map Task Executor #0] mapred.MapTask (MapTask.java:sortAndSpill(1660)) - Finished spill 0
+2018-10-04 10:24:11,483 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:done(1001)) - Task:attempt_local2052748297_0001_m_000000_0 is done. And is in the process of committing
+2018-10-04 10:24:11,491 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - map
+2018-10-04 10:24:11,492 INFO  [LocalJobRunner Map Task Executor #0] mapred.Task (Task.java:sendDone(1121)) - Task 'attempt_local2052748297_0001_m_000000_0' done.
+2018-10-04 10:24:11,492 INFO  [LocalJobRunner Map Task Executor #0] mapred.LocalJobRunner (LocalJobRunner.java:run(249)) - Finishing task: attempt_local2052748297_0001_m_000000_0
+2018-10-04 10:24:11,493 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(456)) - map task executor complete.
+2018-10-04 10:24:11,503 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(448)) - Waiting for reduce tasks
+2018-10-04 10:24:11,504 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:run(302)) - Starting task: attempt_local2052748297_0001_r_000000_0
+2018-10-04 10:24:11,509 INFO  [pool-3-thread-1] mapred.Task (Task.java:initialize(587)) -  Using ResourceCalculatorProcessTree : [ ]
+2018-10-04 10:24:11,511 INFO  [pool-3-thread-1] mapred.ReduceTask (ReduceTask.java:run(362)) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@564413ef
+2018-10-04 10:24:11,531 INFO  [pool-3-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:<init>(196)) - MergerManager: memoryLimit=703542080, maxSingleShuffleLimit=175885520, mergeThreshold=464337792, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-10-04 10:24:11,543 INFO  [EventFetcher for fetching Map Completion Events] reduce.EventFetcher (EventFetcher.java:run(61)) - attempt_local2052748297_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-10-04 10:24:11,647 INFO  [localfetcher#1] reduce.LocalFetcher (LocalFetcher.java:copyMapOutput(141)) - localfetcher#1 about to shuffle output of map attempt_local2052748297_0001_m_000000_0 decomp: 4202 len: 4206 to MEMORY
+2018-10-04 10:24:11,656 INFO  [localfetcher#1] reduce.InMemoryMapOutput (InMemoryMapOutput.java:shuffle(100)) - Read 4202 bytes from map-output for attempt_local2052748297_0001_m_000000_0
+2018-10-04 10:24:11,690 INFO  [localfetcher#1] reduce.MergeManagerImpl (MergeManagerImpl.java:closeInMemoryFile(314)) - closeInMemoryFile -> map-output of size: 4202, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->4202
+2018-10-04 10:24:11,691 INFO  [EventFetcher for fetching Map Completion Events] reduce.EventFetcher (EventFetcher.java:run(76)) - EventFetcher is interrupted.. Returning
+2018-10-04 10:24:11,692 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - 1 / 1 copied.
+2018-10-04 10:24:11,692 INFO  [pool-3-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(674)) - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-10-04 10:24:11,696 INFO  [pool-3-thread-1] mapred.Merger (Merger.java:merge(597)) - Merging 1 sorted segments
+2018-10-04 10:24:11,696 INFO  [pool-3-thread-1] mapred.Merger (Merger.java:merge(696)) - Down to the last merge-pass, with 1 segments left of total size: 4184 bytes
+2018-10-04 10:24:11,699 INFO  [pool-3-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(751)) - Merged 1 segments, 4202 bytes to disk to satisfy reduce memory limit
+2018-10-04 10:24:11,700 INFO  [pool-3-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(781)) - Merging 1 files, 4206 bytes from disk
+2018-10-04 10:24:11,700 INFO  [pool-3-thread-1] reduce.MergeManagerImpl (MergeManagerImpl.java:finalMerge(796)) - Merging 0 segments, 0 bytes from memory into reduce
+2018-10-04 10:24:11,700 INFO  [pool-3-thread-1] mapred.Merger (Merger.java:merge(597)) - Merging 1 sorted segments
+2018-10-04 10:24:11,700 INFO  [pool-3-thread-1] mapred.Merger (Merger.java:merge(696)) - Down to the last merge-pass, with 1 segments left of total size: 4184 bytes
+2018-10-04 10:24:11,701 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - 1 / 1 copied.
+2018-10-04 10:24:11,745 INFO  [pool-3-thread-1] Configuration.deprecation (Configuration.java:warnOnceIfDeprecated(1049)) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-10-04 10:24:11,831 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1366)) - Job job_local2052748297_0001 running in uber mode : false
+2018-10-04 10:24:11,833 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1373)) -  map 100% reduce 0%
+2018-10-04 10:24:12,082 INFO  [pool-3-thread-1] mapred.Task (Task.java:done(1001)) - Task:attempt_local2052748297_0001_r_000000_0 is done. And is in the process of committing
+2018-10-04 10:24:12,083 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - 1 / 1 copied.
+2018-10-04 10:24:12,083 INFO  [pool-3-thread-1] mapred.Task (Task.java:commit(1162)) - Task attempt_local2052748297_0001_r_000000_0 is allowed to commit now
+2018-10-04 10:24:12,087 INFO  [pool-3-thread-1] output.FileOutputCommitter (FileOutputCommitter.java:commitTask(439)) - Saved output of task 'attempt_local2052748297_0001_r_000000_0' to file:/home/pkj6783/project2/output/_temporary/0/task_local2052748297_0001_r_000000
+2018-10-04 10:24:12,088 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:statusUpdate(591)) - reduce > reduce
+2018-10-04 10:24:12,088 INFO  [pool-3-thread-1] mapred.Task (Task.java:sendDone(1121)) - Task 'attempt_local2052748297_0001_r_000000_0' done.
+2018-10-04 10:24:12,088 INFO  [pool-3-thread-1] mapred.LocalJobRunner (LocalJobRunner.java:run(325)) - Finishing task: attempt_local2052748297_0001_r_000000_0
+2018-10-04 10:24:12,088 INFO  [Thread-14] mapred.LocalJobRunner (LocalJobRunner.java:runTasks(456)) - reduce task executor complete.
+2018-10-04 10:24:12,834 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1373)) -  map 100% reduce 100%
+2018-10-04 10:24:12,834 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1384)) - Job job_local2052748297_0001 completed successfully
+2018-10-04 10:24:12,857 INFO  [main] mapreduce.Job (Job.java:monitorAndPrintJob(1391)) - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=99064
+		FILE: Number of bytes written=543831
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1000
+		Map output records=100
+		Map output bytes=4000
+		Map output materialized bytes=4206
+		Input split bytes=109
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=100
+		Reduce shuffle bytes=4206
+		Reduce input records=100
+		Reduce output records=100
+		Spilled Records=200
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=111
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=2010120192
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=36948
+	File Output Format Counters 
+		Bytes Written=3737
